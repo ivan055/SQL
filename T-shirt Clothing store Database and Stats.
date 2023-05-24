@@ -1,0 +1,39 @@
+--Create a T-Shirt clothing store database
+
+CREATE TABLE Shirts (ID INTEGER PRIMARY KEY, COLOR TEXT, BRAND TEXT,AISLE INTEGER, PRICE INTEGER);
+
+Insert into Shirts Values(1,"Red", "Nike",5,35);
+Insert into Shirts Values(2,"Blue", "Nike",6,28);
+Insert into Shirts Values(3,"Yellow", "Nike",7,24);
+Insert into Shirts Values(4,"Black", "Nike",9,21);
+Insert into Shirts Values(5,"White", "Nike",2,29);
+Insert into Shirts Values(6,"Red", "Nike",4,28);
+Insert into Shirts Values(7,"Orange", "Nike",9,27);
+Insert into Shirts Values(8,"Brown", "Nike",1,22);
+Insert into Shirts Values(9,"Black", "Nike",3,32);
+Insert into Shirts Values(10,"Blue", "Nike",8,23);
+Insert into Shirts Values(11,"White", "Nike",6,27);
+Insert into Shirts Values(12,"Black", "Nike",7,29);
+Insert into Shirts Values(13,"Red", "Nike",2,23);
+Insert into Shirts Values(14,"White", "Nike",1,27);
+Insert into Shirts Values(15,"Yellow", "Nike",8,28);
+Insert into Shirts Values(16,"Red", "Nike",8,20);
+
+Select * From Shirts Order by Aisle;
+
+Select Sum(PRICE) From Shirts; 
+
+Select AVG(PRICE) From Shirts;
+
+
+--display the database ordered by aisle. 
+SELECT * FROM shirts
+ORDER BY Aisle; 
+
+--what is the avg price of items in the table? 
+SELECT AVG(price) 
+FROM shirts
+ 
+--what is the sum of the price of the shirts?
+SELECT Sum(PRICE)
+FROM shirts
